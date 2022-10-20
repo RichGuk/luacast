@@ -1,0 +1,37 @@
+return {
+  -- bg = '#0f1720',
+  bg = '#16222f',
+  bg2 = '#273f58',
+  fg = '#ced5e5',
+  black = '#0b1015',
+  white = '#f2f4f8',
+
+  grey100 = '#0b1015',
+  grey200 = '#0e151b',
+  grey300 = '#424242',
+  grey400 = '#7b7b7b',
+  grey500 = '#8f8f8f',
+  grey600 = '#adadad',
+  grey700 = '#c2c2c2',
+  grey800 = '#d6d6d6',
+  grey900 = '#ebebeb',
+
+  orange100 = '#553611',
+  orange200 = '#72440f',
+  orange300 = '#af5f02',
+  orange400 = '#d47b17',
+  orange500 = '#ff8700',
+  orange600 = '#f3a955',
+  orange700 = '#f1be83',
+  orange800 = '#af5f02',
+  orange900 = '#ffe2c0',
+
+
+  blue = '#58aad0',
+  cyan = '#5aa7a8',
+  red = '#d75f5f',
+  purple = '#db95fc',
+  green = '#87af5f',
+  yellow500 = '#ffd660',
+  yellow900 = '#fffaeb',
+}
