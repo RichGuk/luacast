@@ -32,6 +32,7 @@ return {
   red = '#d75f5f',
   purple = '#db95fc',
   green = '#87af5f',
+  yellow400 = '#ebc457',
   yellow500 = '#ffd660',
   yellow900 = '#fffaeb',
 }

@@ -22,7 +22,6 @@ return {
   TabLine = { fg = c.fg, bg = c.grey300 },
   TabLineSel = { fg = c.white, style = 'bold' },
   Title = { fg = c.blue },
-  Directory = { fg = c.blue },
   Search = { fg = c.white, bg = c.blue, style = 'bold' },
 
   -- Code
@@ -32,7 +31,7 @@ return {
   Boolean = { fg = c.orange600 },
   Type = { fg = c.red },
   PreProc =  { fg = c.orange500 },
-  Function = { fg = c.yellow500 },
+  Function = { fg = c.yellow400 },
   Identifier = { fg = c.orange300 },
   Statement = { fg = c.red },
   Conditional = { fg = c.orange300 },
@@ -40,7 +39,7 @@ return {
   Label = { fg = c.orange300 },
   Operator = { fg = c.red },
   Keyword = { fg = c.orange500 },
-  Special = { fg = c.yellow500 },
+  Special = { fg = c.yellow400 },
 
   -- Diff
   diffNewFile = { fg = c.green },
@@ -52,49 +51,91 @@ return {
   diffIndexLine = { fg = c.grey600 },
   diffFile = { fg = c.grey600 },
 
+  ["@text.diff.add"] = { fg = c.green },
+  ["@text.diff.delete"] = { fg = c.red },
 
   -- Ruby
   rubyClass = { link = 'Normal' },
   rubySymbol = { fg = c.blue },
   rubyControl = { fg = c.orange300 },
+  rubyOperator = { fg = c.grey700 },
+
+  -- Javascript
+  javascriptKeyword = { fg = c.red },
+
+  -- CSS
+  cssDefinition = { fg = c.orange300 },
+  cssTagName = { fg = c.orange300 },
+  cssAttrRegion = { fg = c.cyan },
+  cssProp = { fg = c.cyan },
+  cssPositioningAttr = { fg = c.cyan },
+  cssFlexibleBoxAttr = { link = 'cssPositioningAttr' },
+  cssMultiColumnAttr = { link = 'cssPositioningAttr' },
+
+-- cssBraces = 'fg'
+-- cssInclude = 'purple'
+-- cssTagName = 'yellow'
+-- cssClassName = 'yellow'
+-- cssPseudoClass = 'yellow'
+-- cssPseudoClassId = 'yellow'
+-- cssPseudoClassLang = 'yellow'
+-- cssIdentifier = 'yellow'
+-- cssProp = 'fg'
+-- cssDefinition = 'fg'
+-- cssAttr = 'orange'
+-- cssAttrRegion = 'orange'
+-- cssColor = 'orange'
+-- cssFunction = 'purple'
+-- cssFunctionName = 'yellow'
+-- cssVendor = 'orange'
+-- cssValueNumber = 'orange'
+-- cssValueLength = 'orange'
+-- cssUnitDecorators = 'orange'
+-- cssStyle = 'fg'
+-- cssImportant = 'blue'
 
   -- Lua
   luaFunctionBlock = { fg = c.orange500 },
   luaFunc = { fg = c.yellow500 },
 
   -- Treesitter
-  ["@operator"] = { fg = c.grey700 },
+  ["@operator"] = { fg = c.orange600 },
   ["@keyword.operator"] = { fg = c.red },
   ["@constant.builtin"] = { fg = c.red },
   ["@keyword"] = { link = 'Keyword' },
-  -- TSType = { fg = c.red },
+  ["@symbol"] = { fg = c.blue },
   ["@type"] = { link = 'Type' },
-  -- TSNumber = { fg = c.green },
-  -- TSString = { fg = c.green },
-  -- TSBoolean = { fg = c.orange600 },
-  -- TSFunction = { fg = c.yellow500 },
-  -- TSMethod = { fg = c.yellow500 },
-  -- ["@constructor"] = { fg = c.yellow500 },
   ["@tag"] = { fg = c.yellow500 },
-  ["@parameter"] = { fg = c.fg, style = 'bold' },
-  ["@punctuation.bracket"] = { fg = c.white },
-  -- ["@symbol"] = { fg = c.cyan },
-  ["@property"] = { fg = c.white },
-  ["@variable"] = { fg = c.white },
+  ["@parameter"] = { fg = c.white, style = 'bold' },
+  ["@punctuation.bracket"] = { fg = c.grey700 },
+  ["@property"] = { fg = c.blue },
+  ["@field"] = { fg = c.blue },
+  ["@variable"] = { fg = c.grey900 },
   ["@variable.builtin"] = { fg = c.red },
-  -- TSConditional = { fg = c.orange300 },
-  ["@keyword.return"] = { fg = c.orange300 },
-  -- TSInclude = { fg = c.orange500 },
+  ["@conditional"] = { fg = c.orange500 },
+  ["@keyword.return"] = { fg = c.orange500 },
   ["@tag.attribute"] = { fg = c.red },
-  TSLabel = { fg = '#dfdfff' },
-  TSField = { fg = c.cyan },
-  -- TSComment = { link = 'Comment' },
   ["@tag.delimiter"] = { link = 'Delimiter' },
-
-  -- Javascript
-  javascriptKeyword = { fg = c.red },
-
-  -- Ruby
-  rubySymbol = { fg = c.blue },
-  rubyOperator = { fg = c.grey700 },
+  ['@lsp.type.namespace'] = { link = '@namespace' },
+  ['@lsp.type.type'] = { link = '@type' },
+  ['@lsp.type.class'] = { link = '@type' },
+  ['@lsp.type.enum'] = { link = '@type' },
+  ['@lsp.type.interface'] = { link = '@type' },
+  ['@lsp.type.struct'] = { link = '@structure' },
+  ['@lsp.type.parameter'] = { link = '@parameter' },
+  ['@lsp.type.variable'] = { },
+  ['@lsp.type.property'] = { link = '@property' },
+  ['@lsp.type.enumMember'] = { link = '@constant' },
+  ['@lsp.type.function'] = { link = '@function' },
+  ['@lsp.type.method'] = { link = '@method' },
+  ['@lsp.type.macro'] = { link = '@macro' },
+  ['@lsp.type.decorator'] = { link = '@function' },
+  ["@lsp.type.comment"] = { link = "@comment" },
+  ["@lsp.type.keyword"] = { link = "@keyword" },
+  ['@sp.typemod.method.defaultLibrary'] = { link = '@function.builtin' },
+  ['@lsp.typemod.function.defaultLibrary'] = { link = '@function.builtin' },
+  ['@lsp.typemod.operator.injected'] = { link = '@operator' },
+  ['@lsp.typemod.string.injected'] = { link = '@string' },
+  ['@lsp.typemod.variable.defaultLibrary'] = { link = '@variable.builtin' },
+  ['@lsp.typemod.variable.injected'] = { link = '@variable' },
 }
