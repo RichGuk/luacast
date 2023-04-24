@@ -1,9 +1,8 @@
 return {
-  -- bg = '#0f1720',
-  bg = '#16222f',
-  bg2 = '#273f58',
+  bg = '#031926',
+  bg2 = '#435058',
   fg = '#ced5e5',
-  black = '#0b1015',
+  black = '#040403',
   white = '#f2f4f8',
 
   grey100 = '#0b1015',
@@ -28,11 +27,11 @@ return {
 
 
   blue = '#58aad0',
-  cyan = '#5aa7a8',
-  red = '#d75f5f',
-  purple = '#db95fc',
+  red = '#f67982',
   green = '#87af5f',
-  yellow400 = '#ebc457',
-  yellow500 = '#ffd660',
-  yellow900 = '#fffaeb',
+
+  yellowNormal = '#D2BE0F',
+  yellowLight = '#FAF3B3',
+  -- yellowNormal = '#f3e353',
+  -- yellowLight = '#f6e979',
 }
